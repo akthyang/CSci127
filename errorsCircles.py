@@ -2,29 +2,29 @@
 #October 2020
 #A program that draws concentric colored circles, but filled with errors...
 
-#Modified by: ADD YOUR NAME AND EMAIL HERE
+#Modified by: Alicia Yang, alicia.yang86@myhunter.cuny.edu
 
-improt turtle
+#import libraries
+import turtle
 import random
 
 
-print('\nThis program draws concentric circles of many different colors\n")
-
+print('\nThis program draws concentric circles of many different colors\n')
 # prompt for the input
-fig_num = int(input("Enter the number of circles to draw: ")
-radius = int(input("/nEnter the radius (>=50, <=200) of the largest circle: "))
+fig_num = int(input("Enter the number of circles to draw: "))
+radius = int(input("\nEnter the radius (>=50, <=200) of the largest circle: "))
 
 #set the decrement for each concentric radius
-decrement == radius/fig_num
+decrement = radius/fig_num
 
 #initialize turtle
-tina = turtleTurtle()
+tina = turtle.Turtle()
 
 # draw fig_num filled concentric circles, randomly changing colors
-for j in range[fig_num]
+for j in range(fig_num):
     #move the turtle to the -radius y coordinate
     tina.up()
-    tina.goto(0,-radious)
+    tina.goto(0,-radius)
 
     #set a random color
     (r,g,b) = (random.random(), random.random(), random.random())
@@ -38,6 +38,7 @@ for j in range[fig_num]
     tina.end_fill()
 
     #decrement the radius for the next concentri circle
-    radius -= decremen
+    radius = decrement
 
 turtle.Screen().exitonclick()
+
