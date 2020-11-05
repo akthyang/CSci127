@@ -1,4 +1,4 @@
-#YOUR NAME HERE
+#Alicia Yang
 #YOUR EMAIL HERE
 #Inspired by 2018 Nifty Program by Phil Ventura:
 #   This program uses his turtle setup but processing
@@ -53,12 +53,25 @@ def animate(t,lat,lon,wind):
 
     """
 
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other thanname/email above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+    #moves turtle 
+    t.goto(lon, lat)
+    if wind > 157:
+        t.color("red")
+        t.pensize(5)
+    elif 156 >= wind >= 130:
+        t.color("orange")
+        t.pensize(4)
+    elif 129 >= wind >= 111:
+        t.color("yellow")
+        t.pensize(3)
+    elif 110 >= wind >= 96:
+        t.color("green")
+        t.pensize(2)
+    elif 95 >= wind >= 74:
+        t.color("blue")
+        t.pensize(1)
+    else:
+        t.color("white")
     
     return(t)
 
